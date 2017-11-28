@@ -1,0 +1,11 @@
+<h1>Chat#index</h1>
+<!--<p>Find me in app/views/chat/index.html.erb</p>-->
+<form id="message_form">
+  <input type="text" name="message" id="message_field">
+  <input type="submit" id="post_message">
+</form>
+<div id="messages">
+    <% @talks.each do |talk| %>
+    <div class="message"><p><%= talk.message %></p></div>
+    <% end %>
+</div>
